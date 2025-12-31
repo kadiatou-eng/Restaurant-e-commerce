@@ -12,7 +12,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">La Table d'Or</a>
+            <a class="navbar-brand" href="accueil.html">La Table d'Or</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #C9A24D;">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="accueil.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link active" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -38,150 +38,53 @@
         <p>Une sélection raffinée de plats d'exception</p>
     </section>
 
-    <!-- Menu -->
-    <section class="menu-section">
+    <!-- Catégories du menu -->
+    <section class="menu-section" style="padding-bottom: 120px;">
         <div class="container">
-            <!-- Entrées -->
-            <div class="menu-category">
-                <h2>Entrées</h2>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Foie Gras de Canard Poêlé</h3>
-                                <span class="price">28€</span>
+            <div class="row g-5">
+                <!-- Entrées -->
+                <div class="col-md-4 fade-in">
+                    <a href="menu-entrees.html" class="text-decoration-none">
+                        <div class="gallery-item" style="height: 400px;">
+                            <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&h=600&fit=crop" alt="Entrées">
+                            <div class="gallery-overlay">
+                                <h3>Entrées</h3>
                             </div>
-                            <p>Accompagné de chutney de figues et pain d'épices maison, garni de fleur de sel</p>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Saint-Jacques Snackées</h3>
-                                <span class="price">32€</span>
+                        <h2 class="text-center mt-4" style="color: #C9A24D; font-size: 2.2rem;">Entrées</h2>
+                    </a>
+                </div>
+
+                <!-- Plats -->
+                <div class="col-md-4 fade-in">
+                    <a href="menu-plats.html" class="text-decoration-none">
+                        <div class="gallery-item" style="height: 400px;">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=800&h=600&fit=crop" alt="Plats principaux">
+                            <div class="gallery-overlay">
+                                <h3>Plats Principaux</h3>
                             </div>
-                            <p>Noix de Saint-Jacques fraîches, purée de céleri truffée, émulsion de yuzu</p>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Tartare de Thon Rouge</h3>
-                                <span class="price">26€</span>
+                        <h2 class="text-center mt-4" style="color: #C9A24D; font-size: 2.2rem;">Plats</h2>
+                    </a>
+                </div>
+
+                <!-- Desserts -->
+                <div class="col-md-4 fade-in">
+                    <a href="menu-desserts.html" class="text-decoration-none">
+                        <div class="gallery-item" style="height: 400px;">
+                            <img src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts-1.jpg" alt="Desserts">
+                            <div class="gallery-overlay">
+                                <h3>Desserts</h3>
                             </div>
-                            <p>Thon rouge de ligne, avocat crémeux, agrumes, sésame noir et huile d'olive</p>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Velouté de Homard</h3>
-                                <span class="price">30€</span>
-                            </div>
-                            <p>Velouté onctueux, médaillons de homard breton, crème fouettée à l'estragon</p>
-                        </div>
-                    </div>
+                        <h2 class="text-center mt-4" style="color: #C9A24D; font-size: 2.2rem;">Desserts</h2>
+                    </a>
                 </div>
             </div>
 
-            <!-- Image centrale -->
-            <div class="menu-image">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&h=600&fit=crop" alt="Plat gastronomique">
-            </div>
-
-            <!-- Plats -->
-            <div class="menu-category">
-                <h2>Plats Principaux</h2>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Filet de Bœuf Rossini</h3>
-                                <span class="price">45€</span>
-                            </div>
-                            <p>Filet de bœuf français, escalope de foie gras, sauce périgueux, légumes de saison</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Bar de Ligne en Croûte</h3>
-                                <span class="price">42€</span>
-                            </div>
-                            <p>Bar sauvage en croûte d'herbes, risotto crémeux aux asperges vertes</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Carré d'Agneau Rôti</h3>
-                                <span class="price">48€</span>
-                            </div>
-                            <p>Agneau du Limousin, jus corsé, tian de légumes provençaux, pommes grenaille</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Pigeon Rôti aux Épices</h3>
-                                <span class="price">46€</span>
-                            </div>
-                            <p>Pigeon fermier, purée de patate douce, réduction au miel et épices douces</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Risotto aux Truffes Noires</h3>
-                                <span class="price">38€</span>
-                            </div>
-                            <p>Riz carnaroli, copeaux de truffe noire du Périgord, parmesan vieilli 36 mois</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Desserts -->
-            <div class="menu-category">
-                <h2>Desserts</h2>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Soufflé au Grand Marnier</h3>
-                                <span class="price">16€</span>
-                            </div>
-                            <p>Soufflé chaud, glace vanille de Madagascar, crème anglaise au Grand Marnier</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Tarte Tatin Revisitée</h3>
-                                <span class="price">14€</span>
-                            </div>
-                            <p>Pommes caramélisées, pâte feuilletée croustillante, chantilly vanillée</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Sphère Chocolat</h3>
-                                <span class="price">15€</span>
-                            </div>
-                            <p>Dôme de chocolat noir 70%, cœur coulant, crumble noisette, sorbet cassis</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="menu-item">
-                            <div class="menu-item-header">
-                                <h3>Millefeuille Vanille Bourbon</h3>
-                                <span class="price">14€</span>
-                            </div>
-                            <p>Crème pâtissière à la vanille, feuilletage caramélisé, coulis fruits rouges</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Image décorative centrale -->
+            <div class="menu-image mt-5">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&h=600&fit=crop" alt="Ambiance gastronomique">
             </div>
         </div>
     </section>
@@ -193,21 +96,18 @@
             <p style="color: #F7F5F2; font-size: 1.1rem; margin-bottom: 2rem;">
                 Vivez une expérience gastronomique unique
             </p>
-            <button class="btn btn-gold">Réserver</button>
+            <a href="contact.html"><button class="btn btn-gold">Réserver</button></a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 La Table d'Or. Tous droits réservés.</p>
+            <p>© 2025 La Table d'Or. Tous droits réservés.</p>
         </div>
     </footer>
 
-  <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
