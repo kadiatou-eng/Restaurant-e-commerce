@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - La Table d'Or</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="accueil.html">La Table d'Or</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #C9A24D;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="menu-hero">
+        <h1>Notre Menu</h1>
+        <p>Une sélection raffinée de plats d'exception</p>
+    </section>
+
+    <!-- Catégories du menu -->
+    <section class="menu-section" style="padding-bottom: 120px;">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Entrées -->
+                <div class="col-md-4 fade-in">
+                    <a href="menu-entrees.html" class="text-decoration-none">
+                        <div class="gallery-item" style="height: 400px;">
+                            <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800&h=600&fit=crop" alt="Entrées">
+                            <div class="gallery-overlay">
+                                <h3>Entrées</h3>
+                            </div>
+                        </div>
+                        <h2 class="text-center mt-4" style="color: #C9A24D; font-size: 2.2rem;">Entrées</h2>
+                    </a>
+                </div>
+
+                <!-- Plats -->
+                <div class="col-md-4 fade-in">
+                    <a href="menu-plats.html" class="text-decoration-none">
+                        <div class="gallery-item" style="height: 400px;">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=800&h=600&fit=crop" alt="Plats principaux">
+                            <div class="gallery-overlay">
+                                <h3>Plats Principaux</h3>
+                            </div>
+                        </div>
+                        <h2 class="text-center mt-4" style="color: #C9A24D; font-size: 2.2rem;">Plats</h2>
+                    </a>
+                </div>
+
+                <!-- Desserts -->
+                <div class="col-md-4 fade-in">
+                    <a href="menu-desserts.html" class="text-decoration-none">
+                        <div class="gallery-item" style="height: 400px;">
+                            <img src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts-1.jpg" alt="Desserts">
+                            <div class="gallery-overlay">
+                                <h3>Desserts</h3>
+                            </div>
+                        </div>
+                        <h2 class="text-center mt-4" style="color: #C9A24D; font-size: 2.2rem;">Desserts</h2>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image décorative centrale -->
+            <div class="menu-image mt-5">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&h=600&fit=crop" alt="Ambiance gastronomique">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Réservez Votre Table</h2>
+            <p style="color: #F7F5F2; font-size: 1.1rem; margin-bottom: 2rem;">
+                Vivez une expérience gastronomique unique
+            </p>
+            <a href="contact.html"><button class="btn btn-gold">Réserver</button></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 La Table d'Or. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
