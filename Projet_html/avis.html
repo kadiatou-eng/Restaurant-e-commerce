@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis - La Table d'Or</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+      <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" width="180" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #C9A24D;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="avis.html">Avis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="menu-hero">
+        <h1>Témoignages de nos Clients</h1>
+        <p>Découvrez les expériences de nos visiteurs</p>
+    </section>
+
+    <!-- Résumé des notes -->
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="rating-summary fade-in">
+                <div class="rating-number">4.8</div>
+                <div class="rating-stars">★★★★★</div>
+                <div class="total-reviews">Basé sur 247 avis vérifiés</div>
+            </div>
+
+            <!-- Formulaire d'avis -->
+            <div class="form-avis fade-in">
+                <h2 style="color: #C9A24D; margin-bottom: 30px; text-align: center;">Partagez votre expérience</h2>
+                <form id="avisForm">
+                    <div class="mb-4">
+                        <label class="form-label" style="font-weight: 600;">Votre note :</label>
+                        <div class="star-rating">
+                            <input type="radio" name="rating" id="star5" value="5">
+                            <label for="star5">★</label>
+                            <input type="radio" name="rating" id="star4" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" name="rating" id="star3" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" name="rating" id="star2" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" name="rating" id="star1" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Votre nom *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Votre email *" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Partagez votre expérience... *" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold w-100">Publier mon avis</button>
+                </form>
+            </div>
+
+            <!-- Liste des avis -->
+            <h2 class="text-center fade-in" style="color: #C9A24D; font-size: 2.5rem; margin-bottom: 50px;">Les Avis de nos Clients</h2>
+
+            <!-- Avis 1 -->
+            <div class="avis-card fade-in">
+                <div class="avis-header">
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Client" class="client-photo">
+                        <div>
+                            <div class="client-name">
+                                Marie Dupont
+                                <span class="verified-badge">✓ Vérifié</span>
+                            </div>
+                            <div class="avis-date">Il y a 2 jours</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <p class="avis-text">
+                    Une expérience gastronomique exceptionnelle ! Le service était impeccable, l'ambiance raffinée et surtout, les plats étaient absolument délicieux. Le foie gras poêlé était une pure merveille. Nous reviendrons sans hésiter !
+                </p>
+            </div>
+
+            <!-- Avis 2 -->
+            <div class="avis-card fade-in">
+                <div class="avis-header">
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Client" class="client-photo">
+                        <div>
+                            <div class="client-name">
+                                Thomas Bernard
+                                <span class="verified-badge">✓ Vérifié</span>
+                            </div>
+                            <div class="avis-date">Il y a 5 jours</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <p class="avis-text">
+                    Parfait pour un dîner romantique ! Le cadre est magnifique, le personnel aux petits soins. Le filet de bœuf Rossini était cuit à la perfection. La carte des vins est également très bien fournie. Un grand merci au sommelier pour ses conseils.
+                </p>
+            </div>
+
+            <!-- Avis 3 -->
+            <div class="avis-card fade-in">
+                <div class="avis-header">
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Client" class="client-photo">
+                        <div>
+                            <div class="client-name">
+                                Sophie Laurent
+                                <span class="verified-badge">✓ Vérifié</span>
+                            </div>
+                            <div class="avis-date">Il y a 1 semaine</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <p class="avis-text">
+                    Nous avons célébré notre anniversaire de mariage ici et c'était parfait ! Le chef a même préparé un dessert personnalisé. Chaque plat était une œuvre d'art, tant visuellement que gustativement. Un restaurant qui mérite pleinement son étoile.
+                </p>
+            </div>
+
+            <!-- Avis 4 -->
+            <div class="avis-card fade-in">
+                <div class="avis-header">
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Client" class="client-photo">
+                        <div>
+                            <div class="client-name">
+                                Pierre Moreau
+                                <span class="verified-badge">✓ Vérifié</span>
+                            </div>
+                            <div class="avis-date">Il y a 2 semaines</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★☆</div>
+                </div>
+                <p class="avis-text">
+                    Excellente cuisine, service de qualité. Les Saint-Jacques étaient exceptionnelles. Seul petit bémol : les portions sont un peu petites pour le prix, mais c'est le standard de la haute gastronomie. Je recommande vivement pour une occasion spéciale.
+                </p>
+            </div>
+
+            <!-- Avis 5 -->
+            <div class="avis-card fade-in">
+                <div class="avis-header">
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop" alt="Client" class="client-photo">
+                        <div>
+                            <div class="client-name">
+                                Isabelle Petit
+                                <span class="verified-badge">✓ Vérifié</span>
+                            </div>
+                            <div class="avis-date">Il y a 3 semaines</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <p class="avis-text">
+                    Un moment magique du début à la fin ! L'accueil chaleureux, la décoration élégante, et surtout cette cuisine divine. Le menu dégustation était extraordinaire. Chaque plat était une découverte de saveurs. Bravo au chef et à toute l'équipe !
+                </p>
+            </div>
+
+            <!-- Avis 6 -->
+            <div class="avis-card fade-in">
+                <div class="avis-header">
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop" alt="Client" class="client-photo">
+                        <div>
+                            <div class="client-name">
+                                Alexandre Martin
+                                <span class="verified-badge">✓ Vérifié</span>
+                            </div>
+                            <div class="avis-date">Il y a 1 mois</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <p class="avis-text">
+                    J'ai emmené mes clients ici pour un dîner d'affaires et tout était parfait. Ambiance feutrée idéale pour discuter, service discret et efficace. La cuisine est d'un niveau exceptionnel. C'est devenu mon restaurant de référence pour les occasions importantes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Venez Vivre l'Expérience</h2>
+            <p style="color: #F7F5F2; font-size: 1.1rem; margin-bottom: 2rem;">Réservez votre table dès maintenant</p>
+            <a href="contact.html"><button class="btn btn-gold">Réserver</button></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 La Table d'Or. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Gestion du formulaire d'avis
+        document.getElementById('avisForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = this.querySelector('.btn-gold');
+            const originalText = btn.textContent;
+            
+            btn.textContent = 'Envoi en cours...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.textContent = '✓ Avis publié avec succès !';
+                btn.style.background = '#2B8A3E';
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '#C9A24D';
+                    btn.style.opacity = '1';
+                    btn.disabled = false;
+                    this.reset();
+                    
+                    // Réinitialiser les étoiles
+                    document.querySelectorAll('.star-rating label').forEach(label => {
+                        label.style.color = '#ddd';
+                    });
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

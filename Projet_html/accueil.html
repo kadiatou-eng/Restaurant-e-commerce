@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Table d'Or - Restaurant Gastronomique</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" width="180" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                style="background-color: #C9A24D;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="avis.html">Avis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop" alt="Restaurant"
+            class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>La Table d'Or</h1>
+                <p>Une expérience gastronomique inoubliable où tradition et modernité se rencontrent </p>
+                <a href="contact.html" class="btn btn-gold">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="presentation">
+        <div class="container">
+            <div class="presentation-content fade-in">
+                <h2>L'Art de la Gastronomie</h2>
+                <p>
+                    Bienvenue à La Table d'Or, où chaque plat raconte une histoire. Notre chef étoilé et son équipe
+                    passionnée créent des expériences culinaires uniques, alliant techniques traditionnelles et
+                    créativité contemporaine.
+                </p>
+                <p>
+                    Dans un cadre élégant et raffiné, nous vous invitons à découvrir une cuisine d'exception, préparée
+                    avec des produits frais et locaux soigneusement sélectionnés.
+                </p>
+                <p>
+                    Laissez-vous transporter par nos saveurs subtiles et nos présentations artistiques qui éveilleront
+                    tous vos sens.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="fade-in">Nos Créations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallery-item fade-in">
+                        <a href="menu-entrees.html">
+                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=600&fit=crop"
+                                alt="Plat 1">
+                            <div class="gallery-overlay">
+
+                                <h3>Entrées Raffinées</h3>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item fade-in">
+                        <a href="menu-plats.html">
+                            <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&h=600&fit=crop"
+                                alt="Plat 2">
+                            <div class="gallery-overlay">
+                                <h3>Plats Signature</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="menu-desserts.html">
+                        <div class="gallery-item fade-in">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&h=600&fit=crop"
+                                alt="Dessert">
+                            <div class="gallery-overlay">
+                                <h3>Desserts Exquis</h3>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Avis -->
+        <section class="trust bg-light">
+            <div class="container text-center fade-in">
+                <h2>Ils Nous Font Confiance</h2>
+                <p class="text-dark">
+                    Découvrez ce que nos clients pensent de leur expérience à La Table d'Or.
+                </p>
+                <a href="avis.html" class="btn btn-gold">voir les avis</a>
+            </div>
+        </section>
+
+        <!-- Ambiance -->
+
+
+        <section class="ambiance ">
+            <div class="container">
+                <h2 class="text-center fade-in mb-4">Notre Ambiance</h2>
+
+                <div id="ambianceCarousel" class="carousel slide fade-in" data-bs-ride="carousel">
+
+                    <!-- Indicateurs -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ambianceCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#ambianceCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#ambianceCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#ambianceCarousel" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1600"
+                                class="d-block w-100" alt="Ambiance 1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600"
+                                class="d-block w-100" alt="Ambiance 2">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600"
+                                class="d-block w-100" alt="Ambiance 3">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600"
+                                class="d-block w-100" alt="Ambiance 4">
+                        </div>
+                    </div>
+
+                    <!-- Contrôles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ambianceCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#ambianceCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 La Table d'Or. Tous droits réservés.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+</body>
+
+</html>
